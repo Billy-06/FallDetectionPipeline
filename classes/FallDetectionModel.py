@@ -1,4 +1,5 @@
 # Import necessary libraries
+from classes.YoloV5 import YoloV5
 import tensorflow as tf
 import numpy as np
 import cv2
@@ -6,9 +7,9 @@ import os
 
 
 class FallDetectionModel(tf.keras.Model):
-    def __init__(self, yolov5_weights):
+    def __init__(self, yolov5_weights, cfg_file):
         super(FallDetectionModel, self).__init__()
-        self.yolov5 = YOLOv5('yolov5s.yaml')
+        self.yolov5 = YoloV5(cfg_file)
         self.yolov5.load_weights(yolov5_weights)
         self.yolov5.trainable = False
         self.flatten = tf.keras.layers.Flatten()

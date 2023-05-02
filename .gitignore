@@ -23,3 +23,6 @@ env/
 
 # zip files
 *.zip
+
+# Image and data files
+my_data/

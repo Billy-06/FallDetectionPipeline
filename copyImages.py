@@ -30,11 +30,4 @@ for filename in os.listdir(source_folder):
             break
 
 print(f"Copied {files_copied} files to '{destination_folder}'")
-To use this script, you need to modify the source_folder and destination_folder variables to match the paths to your source and destination folders. You can also modify the list of image file extensions (.png, .jpg, etc.) to match the file types you want to copy. Once you've made these modifications, save the script as a .py file and run it in your terminal with the command python script_name.py.
 
-
-
-
-
-
-Regenerate response

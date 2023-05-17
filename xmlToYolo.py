@@ -27,7 +27,9 @@ def yolo_to_xml_bbox(bbox, w, h):
 
 classes = []
 input_dir = "my_data/LLVIP/Annotations/"
-output_dir = "my_data/LLVIP/labels/val"
+# output_dir = "my_data/LLVIP/visible/labels/train"
+# image_dir = "my_data/LLVIP/visible/train/"
+output_dir = "my_data/LLVIP/visible/labels/val"
 image_dir = "my_data/LLVIP/visible/val/"
 
 # create the labels folder (output directory)

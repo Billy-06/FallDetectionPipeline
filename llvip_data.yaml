@@ -1,0 +1,11 @@
+path: ../my_data/LLVIP
+
+train: visible/images/train
+test: visible/test
+val: visible/images/val
+
+nc: 2
+
+names: 
+    0: person
+    1: non-person
